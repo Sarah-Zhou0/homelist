@@ -26,6 +26,7 @@ def page_1():
     st.text('象王行')
     with open('Zhouxinling_象王行.mp3', 'rb') as f:
         mymp3 = f.read()
+    st.audio(mymp3, format='audio/mp3', start_time=0)
     st.text('桃花诺')
     with open('Zhouxinling_桃花诺.mp3', 'rb') as f:
         mymp3 = f.read()
