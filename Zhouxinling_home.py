@@ -63,11 +63,6 @@ def page_1():
 
 def page_2():
     '''图片换色工具'''
-    roading = st.progress(0, '开始加载')
-    for i in range(1, 101, 1):
-        time.sleep(0.02)
-        roading.progress(i, '正在加载'+str(i)+'%')
-    roading.progress(100, '加载完毕！')
     st.subheader(":orange[:volcano:图片换色小程序:volcano:]")
     uploaded_file = st.file_uploader("上传图片", type=['jpg','png','jpeg'])
     if uploaded_file:
